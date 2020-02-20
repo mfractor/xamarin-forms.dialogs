@@ -1,7 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DialogsExamples.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             mc:Ignorable="d"
+             x:Class="DialogsExamples.MainPage"
+             xmlns:controls="clr-namespace:DialogsExamples.Controls">
+  <ScrollView VerticalOptions="Center">
+    <StackLayout Orientation="Vertical">
+
+      <Button Text="Alert" Command="{Binding AlertCommand}" />
+
+      <controls:HorizontalDivider/>
+
+      <Button Text="Confirm" Command="{Binding ConfirmCommand}"/>
+
+      <controls:HorizontalDivider/>
+
+      <Button Text="Action Sheet" Command="{Binding ActionSheetCommand}"/>
+
+      <controls:HorizontalDivider/>
+        
+      <Button Text="Prompt" Command="{Binding PromptCommand}"/>
+
+      <controls:HorizontalDivider/>
+        
+      <Button Text="Toast" Command="{Binding ToastCommand}"/>
+
+      <controls:HorizontalDivider/>
+        
+      <Button Text="Progress Indicator" Command="{Binding ProgressIndicatorCommand}"/>
+
+      <controls:HorizontalDivider/>
+        
+      <Button Text="Custom Popup" Command="{Binding CustomPopupCommand}"/>
+
+      <controls:HorizontalDivider/>
+
+        <Label Text="{Binding Message}" HorizontalTextAlignment="Center" Margin="0,10,0,0" FontAttributes="Bold"/>
+
     </StackLayout>
+  </ScrollView>
 </ContentPage>

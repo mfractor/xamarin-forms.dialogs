@@ -130,6 +130,14 @@
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.2.0.223</Version>
     </PackageReference>
+    <PackageReference Include="Fody">
+      <Version>6.1.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody">
+      <Version>3.2.6</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -137,5 +145,13 @@
       <Project>{278474D7-1DFE-48C1-8B6B-186D7107828F}</Project>
       <Name>DialogsExamples</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xds%403x.png" />
+    <BundleResource Include="Resources\xds%402x.png" />
+    <BundleResource Include="Resources\xds.png" />
+    <BundleResource Include="Resources\monkeyfest%403x.png" />
+    <BundleResource Include="Resources\monkeyfest%402x.png" />
+    <BundleResource Include="Resources\monkeyfest.png" />
   </ItemGroup>
 </Project>

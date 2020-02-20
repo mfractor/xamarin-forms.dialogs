@@ -16,6 +16,8 @@ namespace DialogsExamples
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainViewModel(Navigation, Acr.UserDialogs.UserDialogs.Instance);
         }
     }
 }
