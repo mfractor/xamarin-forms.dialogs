@@ -3,29 +3,40 @@ An introduction to the various dialogs that we can use in a Xamarin.Forms app.
 
 ## Introduction
 
+When developing mobile applications, dialogs are a foundational building block in our tool-belt. We can use dialogs to show a confirmation message, to indicate when the app is working or even to create a rich input form that appears over our main user interface.
 
+This article is an introduction on how to use dialogs in Xamarin.Forms and is intended to be a beginners guide. I aim to introduce the core concepts and terminology on dialogs, get you started with the most current dialog frameworks and to provide a quick reference on how to use the main dialog types.
 
-This article is an introduction on how to using dialogs in Xamarin.Forms
+Before we dive into using dialogs, let's take a moment to introduce some important terminology that I will use throughout this article:
 
-Before we get started, a quick note on the scope of this article. This article's intent is to be a beginners guide on the types of dialogs available in Xamarin.Forms. I aim to introduce the core concepts and terminology on dialogs, get you started with the most current dialog frameworks and to provide a quick reference on how to use each dialog.
+ * **Modal**: The dialog appears over the existing user interfaes and blocks input to the elements beneath it. Modal dialogs effectively "focus" the users attention onto the dialog.
+ * **Transient**: A transient dialog is temporary and dismisses by itself without user intervention. For example, dialogs that automatically dismiss after a specified time span are transient.
 
-Ideally, this article is suitable for those new to Xamarin.Forms
+Next
 
-Firstly, what is some of the key terminology we use when
+ * [Alerts](#alerts): A dialog that shows a message.
+ * [Prompts](#prompts): A dialog that requests input from a user.
+ * [Action Sheets](#action-sheets): A list of choices presented to a user.
+ * [Toast](#toasts): A small, unobtrusive message that shows for a small amount of time.
+ * [Activity Indicator](#activity-indicators): A dialog to indicate that our app is working.
+ * [Custom Popups](#custom-Popups): A modal dialog with fully customised content.
 
-We'll be using the following frameworks and packages in this tutorial.
+The full source code for this
 
- * Xamarin.Forms:
- * Acr.UserDialogs: A cross platform
-    * Getting Start Guide
+## Packages And Frameworks
+
+While Xamar
+
+ * Acr.UserDialogs: A rich dialogs library for Xamarin.Forms. Acr.User dialogs is the de-factor standard when working with dialogs in Xamarin.Forms.
+    * [Getting Start Guide]();
  * Rg.Popups: Create fully customised popups and modal dialogs using Xamarin.Forms pages.
     * [Getting Start Guide](https://github.com/rotorgames/Rg.Plugins.Popup/wiki/Getting-started)
+
+
 
 ## Terminology
 
 One important
-
-I
 
  * [Alerts](#alerts): A dialog that shows a message.
  * [Prompts](#prompts): A dialog that requests input from a user.
@@ -34,22 +45,30 @@ I
  * [Activity Indicator](#Activity-Indicators): A dialog to indicate that our app is working.
  * [Custom Popups](#Custom-Popups): A modal dialog with fully customised content.
 
-## Alerts
+Terminology:
 
-An **Alert** is a dialog we use to show a message to a user.
 
-Alert dialogs are a convienent
+## Dialogs 101
 
-In Acr.UserDialogs we would show an alert like so:
+### Alerts
 
-**Showing a message**
+An **Alert** is a modal dialog used to show a message to a user.
+
+![Using an alert in Xamarin.Forms](img/alert.png)
+
+Alert dialogs are a convenient
+
+Using Acr.UserDialogs, we would show an alert like so:
+
 ```
-Acr.UserDialogs.UserDialogs.Instance.Alert("", "Ok");
+Acr.UserDialogs.UserDialogs.Instance.Alert("Welcome to aler", "Ok");
 ```
 
 Some common use cases
 
 A special kind of alert dialog is a **Confirm** dialog, an alert that display a message with a choice of two or more actions.
+
+![Using a confirmation dialog in Xamarin.Forms](img/confirm.png)
 
 Confirm dialogs are used to force a user to double check
 
@@ -58,24 +77,19 @@ Short tutorial on how I show an alert with Acr user dialogs
 
 Include image.
 
-## Prompts
+### Prompts
 
-An **Prompt** is a dialog that appears over all
+An **Prompt** is a modal dialog that notifies the use
 
+![Using a prompt in Xamarin.Forms](img/prompt.png)
 
 **Using a prompt**
 
-What is an alert and why would I use one?
+### Action Sheets
 
- -> A modal dialog that shows a message and a confirm/cancel button
+An **Action Sheet** is a popup dialog that present the user with a selection of item and, optionally, a cancel and destructive action.
 
-Short tutorial on how I show an alert with Acr user dialogs
-
-Include image.
-
-## Action Sheets
-
-Action Sheet: An list of items
+![Using an action sheet in Xamarin.Forms](img/action-sheet.png)
 
 What is an action sheet? Why would I use one?
 
@@ -85,14 +99,11 @@ Short tutorial on how I show an action sheet with Acr user dialogs
 
 Include image.
 
-## Toasts
+### Toasts
 
-A **Toast** is
+A **Toast** is a small, temporary popup that shows at the bottom of the screen useful for display displaying small and unobtrusive messages. Toasts are effectively transient dialogs
 
-
-**
-
-A Toast dialog comes is an Android paradigm that is useful for displaying small and unobtrusive messages. It appears as a small a transient popup that appears on the bottom of the screen that contains a small piece of text.
+![Using a toast in Xamarin.Forms](img/toast.png)
 
 For example:
 
@@ -100,15 +111,19 @@ To
 
 A source code sample
 
-## Activity Indicator
+### Progress
 
 What is a progress indicator and why would I use it?
 
+![Using a progress dialog in Xamarin.Forms](img/progress.png)
+
  -> A modal dialog that display an activity indicator. Can use it to
 
-## Custom Popups
+### Custom Popup
 
 What is a custom popup and why would I use it?
+
+![Using a custom popup in Xamarin.Forms](img/custom-popup.png)
 
  -> A modal pop
 
