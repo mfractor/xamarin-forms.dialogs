@@ -5,14 +5,18 @@ An introduction to the various dialogs that we can use in a Xamarin.Forms app.
 
 When developing mobile applications, dialogs are a foundational building block in our tool-belt. We can use dialogs to show a confirmation message, to indicate when the app is working or even to create a rich input form that appears over our main user interface.
 
-This article is an introduction on how to use dialogs in Xamarin.Forms and is intended to be a beginners guide. I aim to introduce the core concepts and terminology on dialogs, get you started with the most current dialog frameworks and to provide a quick reference on how to use the main dialog types.
+This article aims to be a getting-started guide for using dialogs in Xamarin.Forms and is intended to be a beginners guide. I aim to introduce the core concepts and terminology, get you started with the most current dialog frameworks and provide a quick reference on the main dialog types. 
 
-Before we dive into using dialogs, let's take a moment to introduce some important terminology that I will use throughout this article:
+If you're totally new Xamarin.Forms and want to learn about dialogs, this is the article for you 😉
 
- * **Modal**: The dialog appears over the existing user interfaes and blocks input to the elements beneath it. Modal dialogs effectively "focus" the users attention onto the dialog.
- * **Transient**: A transient dialog is temporary and dismisses by itself without user intervention. For example, dialogs that automatically dismiss after a specified time span are transient.
+Before we dive in, let's take a moment to introduce two important terms used throughout this article:
 
-Next
+ * **Modal**: A dialog appears over the existing user interfaes and blocks input to the elements beneath it, not allowing them to exit by tapping outside it.. Modal dialogs effectively "focus" the users attention onto the dialog
+ * **Transient**: A temporary dialog and dismisses by itself without user intervention. For example, dialogs that automatically dismiss after a specified time span are transient.
+
+These terms, Modal and Transient, will be used many times in this article
+
+Next, let's explore the six main dialogs kinds that we will explore in this guide:
 
  * [Alerts](#alerts): A dialog that shows a message.
  * [Prompts](#prompts): A dialog that requests input from a user.
@@ -21,32 +25,18 @@ Next
  * [Activity Indicator](#activity-indicators): A dialog to indicate that our app is working.
  * [Custom Popups](#custom-Popups): A modal dialog with fully customised content.
 
-The full source code for this
+The full source code for this article can be found here.
 
 ## Packages And Frameworks
 
-While Xamar
+Before we get started 
+
+While Xamarin
 
  * Acr.UserDialogs: A rich dialogs library for Xamarin.Forms. Acr.User dialogs is the de-factor standard when working with dialogs in Xamarin.Forms.
     * [Getting Start Guide]();
  * Rg.Popups: Create fully customised popups and modal dialogs using Xamarin.Forms pages.
     * [Getting Start Guide](https://github.com/rotorgames/Rg.Plugins.Popup/wiki/Getting-started)
-
-
-
-## Terminology
-
-One important
-
- * [Alerts](#alerts): A dialog that shows a message.
- * [Prompts](#prompts): A dialog that requests input from a user.
- * [Action Sheets](#Action-Sheets): A list of choices presented to a user.
- * [Toast](#Toasts): A small, unobtrusive message that shows for a small amount of time.
- * [Activity Indicator](#Activity-Indicators): A dialog to indicate that our app is working.
- * [Custom Popups](#Custom-Popups): A modal dialog with fully customised content.
-
-Terminology:
-
 
 ## Dialogs 101
 
@@ -56,7 +46,7 @@ An **Alert** is a modal dialog used to show a message to a user.
 
 ![Using an alert in Xamarin.Forms](img/alert.png)
 
-Alert dialogs are a convenient
+Alerts are a convenient way to inform
 
 Using Acr.UserDialogs, we would show an alert like so:
 
