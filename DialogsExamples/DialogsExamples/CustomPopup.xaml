@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <popups:PopupPage xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-  xmlns="http://xamarin.com/schemas/2014/forms"
-  x:Class="DialogsExamples.CustomPopup"
-                  CloseWhenBackgroundIsClicked="False"
-  xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
-                  xmlns:controls="clr-namespace:DialogsExamples.Controls">
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    x:Class="DialogsExamples.CustomPopup"
+    CloseWhenBackgroundIsClicked="False"
+    xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns:controls="clr-namespace:DialogsExamples.Controls">
 
     <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding="10" BackgroundColor="WhiteSmoke">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="Auto"/>
-      </Grid.RowDefinitions>
+       <Grid.RowDefinitions>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
