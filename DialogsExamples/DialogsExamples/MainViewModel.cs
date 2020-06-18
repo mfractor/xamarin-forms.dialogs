@@ -111,7 +111,7 @@ namespace DialogsExamples
             {
                 return new Command(() =>
                 {
-                    userDialogs.Toast("I am a custom toast. Great for showing small pieces of transient information.");
+                    userDialogs.Toast("I am a toast. Great for showing small pieces of transient information.");
                 });
             }
         }
@@ -122,7 +122,7 @@ namespace DialogsExamples
             {
                 return new Command(async () =>
                 {
-                    var input = await userDialogs.PromptAsync("What would is your email?", "Confirm Email", "Confirm", "Cancel");
+                    var input = await userDialogs.PromptAsync("What is your email?", "Confirm Email", "Confirm", "Cancel");
 
                     if (input.Ok)
                     {
