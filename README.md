@@ -1,5 +1,5 @@
 # A Beginners Guide To Dialogs In Xamarin.Forms
-An introduction to the various dialogs that we can use in a Xamarin.Forms app.
+Learn to use the dialogs that we can use in a Xamarin.Forms app.
 
 ## Introduction
 
@@ -31,8 +31,6 @@ While Xamar
     * [Getting Start Guide]();
  * Rg.Popups: Create fully customised popups and modal dialogs using Xamarin.Forms pages.
     * [Getting Start Guide](https://github.com/rotorgames/Rg.Plugins.Popup/wiki/Getting-started)
-
-
 
 ## Terminology
 
